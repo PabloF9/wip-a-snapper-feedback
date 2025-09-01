@@ -1,0 +1,170 @@
+# WIP-a-Snapper v1.0.2 - User Guide
+
+## 📸 Overview
+
+**WIP-a-Snapper** is a professional After Effects composition screenshot tool designed to streamline your workflow-in-progress documentation. It automatically generates organized, timestamped screenshots with intelligent naming conventions and flexible save locations.
+
+## ✨ Key Features
+
+- **🎯 One-Click Screenshots** - Capture the current frame from any composition
+- **🏷️ Smart Naming** - Automatic file naming with project and composition details
+- **📁 Flexible Storage** - Save to custom locations or project root folders
+- **⚙️ Customizable Settings** - Persistent preferences for naming and save locations
+- **📊 Progress Tracking** - Visual feedback during screenshot capture
+- **🔄 Auto-Incrementing** - Never overwrite existing screenshots
+- **💾 Project Integration** - Seamlessly works with your After Effects workflow
+
+## 🚀 Quick Start
+
+### 1. Installation
+1. Copy the `wip-a-snapper_v1.0.2.jsx` file to your After Effects Scripts folder
+2. Restart After Effects
+3. Navigate to **File > Scripts > Run Script File...** and select the script
+
+### 2. First Use
+1. Open a composition in After Effects
+2. Position the playhead at the desired frame
+3. Click **"Take Screenshot"** to capture the current frame
+
+## 🎛️ Interface Overview
+
+### Main Controls
+- **Naming Convention Dropdown** - Choose how files are named
+- **Settings Button** - Configure save location and preferences
+- **Take Screenshot Button** - Capture the current frame
+- **Progress Bar** - Shows screenshot capture progress
+- **Status Text** - Displays current operation status
+
+### Naming Convention Options
+1. **Project & Comp Name** (Default) - `ProjectName_CompName_-001-v1.0.png`
+2. **Project Name Only** - `ProjectName_-001-v1.0.png`
+3. **Comp Name Only** - `CompName_-001-v1.0.png`
+
+## ⚙️ Configuration
+
+### Save Location Settings
+1. Click the **"Settings"** button
+2. Choose between:
+   - **Custom Location** - Set a specific folder for all screenshots
+   - **Project Root** - Hold Shift while clicking "Take Screenshot" to save in `_WIP-a-Snapper` folder
+
+### Custom Save Location
+1. Open Settings dialog
+2. Click **"Browse"** to select a folder
+3. Click **"OK"** to save your preference
+4. Your choice is remembered between sessions
+
+## 📱 Usage Instructions
+
+### Basic Screenshot
+1. **Select Composition** - Make sure your desired composition is active
+2. **Position Playhead** - Move to the exact frame you want to capture
+3. **Click "Take Screenshot"** - The script will automatically:
+   - Check composition resolution
+   - Generate appropriate filename
+   - Save as PNG format
+   - Provide confirmation
+
+### Shift-Click for Project Root
+- Hold **Shift** while clicking "Take Screenshot"
+- Saves to `_WIP-a-Snapper` folder in your project directory
+- Useful for project-specific documentation
+
+### Resolution Warnings
+The script automatically detects if your composition is set to less than Full resolution and warns you about potential quality loss.
+
+## 📁 File Organization
+
+### Automatic Folder Creation
+- **Custom Location**: Creates project-named subfolders automatically
+- **Project Root**: Creates `_WIP-a-Snapper` folder if it doesn't exist
+
+### File Naming Examples
+```
+Project_v1.0_Intro_-001-v1.0.png
+Project_v1.0_Intro_-002-v1.0.png
+Project_v1.0_Intro_-003-v1.0.png
+```
+
+### Auto-Incrementing
+- Files are automatically numbered (001, 002, 003, etc.)
+- Never overwrites existing files
+- Supports up to 999 screenshots per project
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+**"Please select a composition"**
+- Make sure a composition is active in After Effects
+- Check that you're in the Composition panel, not Project panel
+
+**"Please save your After Effects project"**
+- Save your project with a proper name first
+- Or use Shift+Click to save in project root
+
+**"Save location folder not found"**
+- Check your Settings configuration
+- Verify the folder path still exists
+- Re-configure in Settings if needed
+
+**Low-quality screenshots**
+- Ensure composition is set to Full resolution
+- Check the resolution warning dialog
+
+### Error Recovery
+- Check the progress bar and status text for operation details
+- Verify file permissions in your save location
+- Ensure sufficient disk space
+
+## 💡 Pro Tips
+
+### Workflow Integration
+- **Batch Captures** - Take multiple screenshots during review sessions
+- **Version Control** - Use with project versioning for comprehensive documentation
+- **Client Reviews** - Generate WIP screenshots for client approval processes
+
+### File Management
+- **Organized Structure** - Each project gets its own folder automatically
+- **Consistent Naming** - Files are always organized chronologically
+- **Easy Retrieval** - Find screenshots quickly with predictable naming
+
+### Performance
+- **Fast Operation** - Screenshots capture in seconds
+- **Minimal Impact** - Doesn't interfere with your After Effects workflow
+- **Progress Feedback** - Always know what's happening during capture
+
+## 🔄 Version History
+
+### v1.0.2 (Current)
+- Enhanced progress tracking
+- Improved error handling
+- Better user feedback
+- Persistent settings storage
+
+### v1.0.0
+- Initial release
+- Basic screenshot functionality
+- Custom save locations
+
+## 📞 Support
+
+### System Requirements
+- **Adobe After Effects** CC 2018 or later
+- **Operating System** - Windows 10+ or macOS 10.14+
+- **Memory** - 8GB RAM minimum (16GB recommended)
+
+### Compatibility
+- Works with all After Effects composition types
+- Supports all standard image formats (PNG output)
+- Compatible with most project structures
+
+## 📝 License & Usage
+
+This script is provided as-is for professional use. It's designed to enhance your After Effects workflow and should be used in accordance with Adobe's terms of service.
+
+---
+
+**WIP-a-Snapper v1.0.2** - Making your workflow documentation effortless! 📸✨
+
+*Last updated: August 29, 2025*
